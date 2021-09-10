@@ -1,23 +1,18 @@
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Global from './theme/global';
+import Footer from './components/Footer';
+import Content from './components/Content';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Global/>
+      <Header/>
+      <Content/>
+      <Footer/>
+    </React.Fragment>
   );
 }
 
